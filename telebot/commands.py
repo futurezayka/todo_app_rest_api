@@ -1,4 +1,4 @@
 WELCOME_MESSAGE = '''
-Hello, it`s your 'ToDo' App\n
-Use next commands ->> \n
+Hello!!!!\n
+Use next commands -> \n
 '''
