@@ -212,9 +212,9 @@
     form.addEventListener('submit', function (e) {
         e.preventDefault()
         console.log('Form submitted')
-        let url = 'http://127.0.0.1:8000/api/task-create/'
+        var url = 'http://127.0.0.1:8000/api/task-create/'
         if (activeItem != null) {
-            let url = `http://127.0.0.1:8000/api/task-update/${activeItem.id}`
+            var url = `http://127.0.0.1:8000/api/task-update/${activeItem.id}`
             activeItem = null
         }
 

@@ -26,3 +26,9 @@ async def create_task(data):
     async with aiohttp.ClientSession() as session:
         async with session.post("http://127.0.0.1:8000/api/task-create/", json=data) as response:
             return response.status
+
+
+async def update_task(data, task_id):
+    async with aiohttp.ClientSession() as session:
+        async with session.post(f"http://127.0.0.1:8000/api/task-update/{task_id}", json=data) as response:
+            return response.status
